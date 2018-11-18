@@ -1,0 +1,63 @@
+.knowledge{
+    display:none;
+    .top_container{
+        border-bottom:none;
+        .head{
+            width: 40%;
+            h2{
+                font-size: 80px;
+                font-weight: bold;
+                letter-spacing: 5px;
+                span{
+                    position: relative;
+                    &::before{
+                        content: '';
+                        position:absolute;
+                        width: 40px;
+                        height: 40px;
+                        background: #0f33ff;
+                        border-radius: 50%;
+                        top:-10px;
+                        left:-9px;
+                    }
+                }
+            }
+            .button{
+                &::after{
+                    display:none;
+                }
+            }
+        }
+        img{
+            margin-top:-20px;
+            height: 550px;
+            margin-left: 150px;
+            align-self: unset;
+        }
+    }
+    .bottom_container{
+        ul{
+            li{
+                border:15px solid #0f33ff;
+                &:nth-child(n+2){
+                    margin-left:25px;
+                }
+                a{
+                    display:block;
+                    position: relative;
+                }
+                img{
+                    height: 100px;
+                }
+                span{
+                    position:absolute;
+                    bottom:-22px;
+                    left: 10px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    letter-spacing: 0.5px;
+                }
+            }
+        }
+    }
+}

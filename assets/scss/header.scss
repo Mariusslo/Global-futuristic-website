@@ -1,0 +1,14 @@
+.header_container{
+    margin: 0 auto;
+    padding: 20px 55px;
+    a{
+        display: inline-block;
+    }
+    .button{
+        font-weight: bold;
+        display:none;
+    }
+    .hamburger-button{
+        cursor:pointer;
+    }
+}
