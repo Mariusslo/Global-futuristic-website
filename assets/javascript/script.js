@@ -26,6 +26,7 @@ sendDataButton.addEventListener('click',function(){
     })
 })
 
+
 mousewheelChange();
 
 hamButton.addEventListener('click',function(){
