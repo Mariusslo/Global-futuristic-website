@@ -17,7 +17,6 @@ var sendDataButton = document.querySelector('.form input.button');
 var formInputs = Array.from(document.querySelectorAll('.form div input'));
 
 sendDataButton.addEventListener('click',function(){
-    let empty = false;
     formInputs.forEach(function(el){
         if(!el.value){
             el.nextElementSibling.style.display = 'block';
