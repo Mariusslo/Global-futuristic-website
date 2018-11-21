@@ -26,6 +26,28 @@ sendDataButton.addEventListener('click',function(){
     })
 })
 
+function checkData(){
+    let empty = false;
+    formInputs.forEach(function(el){
+        if(!el.value){
+            empty = true;
+        }
+    })
+    return empty;
+}
+
+function getData(){
+    let info = [];
+    if(!checkData()){
+        formInputs.forEach(function(el){
+            info.push(el.value);
+            info.push("\n");
+        })
+        info = info.join('');
+        alert(info);
+    }
+}
+
 
 mousewheelChange();
 
