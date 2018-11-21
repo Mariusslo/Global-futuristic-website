@@ -242,10 +242,16 @@
                             </div>
                         </div>
                     </div>
-                    <form action="POST" class='flex direction-column center'>
+                    <form action="" class='flex direction-column center'>
                         <div class="flex space-around-row">
-                            <input type="text" placeholder="Name">
-                            <input type="text" placeholder="Email">
+                            <div>
+                                <input type="text" placeholder="Name">
+                                <p class = 'validation_error'>Field cannot be empty</p>
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Email">
+                                <p class = 'validation_error'>Field cannot be empty</p>
+                            </div>
                         </div>
                         <input type="submit" value="Send request" class="button">
                     </form>

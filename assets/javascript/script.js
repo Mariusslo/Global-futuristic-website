@@ -22,7 +22,7 @@ sendDataButton.addEventListener('click',function(){
         if(!el.value){
             el.nextElementSibling.style.display = 'block';
         }else{
-            el.nextElementSibling.style.display = 'none';
+            el.nextElementSibling.style.display = '';
         }
     })
 })
