@@ -476,6 +476,14 @@ header {
   border-bottom: 3px solid #efefef;
   font-size: 28px;
 }
+.form form div p.validation_error {
+  position: absolute;
+  color: red;
+  margin-top: 10px;
+  display: none;
+  overflow: hidden;
+  transition: 0.5s;
+}
 .form form input {
   margin-top: 65px;
   width: 400px;

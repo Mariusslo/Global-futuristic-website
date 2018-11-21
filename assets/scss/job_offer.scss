@@ -22,6 +22,16 @@
                 border-bottom:3px solid #efefef;
                 font-size: 28px;
             }
+            p{
+                &.validation_error{
+                    position:absolute;
+                    color:red;
+                    margin-top: 10px;
+                    display:none;
+                    overflow:hidden;
+                    transition:0.5s;
+                }
+            }
         }
         input{
             margin-top: 65px;

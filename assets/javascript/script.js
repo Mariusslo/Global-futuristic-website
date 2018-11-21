@@ -13,6 +13,19 @@ var hamburgerTrigger = false;
 var changeIsPossible = true;
 var outer_menu = document.querySelector('.outer_menu');
 var outer_menu_list = Array.from(document.querySelectorAll('.outer_menu a'));
+var sendDataButton = document.querySelector('.form input.button');
+var formInputs = Array.from(document.querySelectorAll('.form div input'));
+
+sendDataButton.addEventListener('click',function(){
+    let empty = false;
+    formInputs.forEach(function(el){
+        if(!el.value){
+            el.nextElementSibling.style.display = 'block';
+        }else{
+            el.nextElementSibling.style.display = 'none';
+        }
+    })
+})
 
 mousewheelChange();
 
@@ -267,3 +280,4 @@ option_buttons.forEach(function(button){
         });
     }
 );
+
